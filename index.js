@@ -58,7 +58,7 @@ if(shoes <= balance) {
 }
 
 
-let grade = 70;
+let grade = 90;
 
 // check if the grade is an A, B, C, D, or F
 
@@ -107,4 +107,85 @@ const promptForGuess = () => {
     }
 };
 
-promptForGuess();
+// promptForGuess();
+
+// switch statements
+
+const day = new Date().getDay();
+console.log(day)
+
+switch(day) {
+    case 0: 
+        console.log('Sunday');
+    break;
+    case 1:
+        console.log('Monday');
+    break;
+    case 2:
+        console.log('Tuesday');
+    break;
+    case 3:
+        console.log('Wednesday');
+    break;
+    case 4:
+        console.log('Thursday');
+    break;
+    case 5:
+        console.log('Friday');
+    break;
+    case 6:
+        console.log('Saturday');
+    break;
+    default:
+        console.log('Something went horribly wrong...');
+    break;
+}
+
+switch(true) {
+    case grade >= 90:
+        console.log('A');
+    break;
+    case grade >= 80:
+        console.log('B');
+    break;
+    case grade >= 70:
+        console.log('C');
+    break;
+    case grade >= 60:
+        console.log('D');
+    break;
+    default:
+        console.log('F');   
+}
+
+const month = new Date().getMonth();
+console.log(month)
+// Winter: January, February, March
+// Spring: April, May, June
+// Summer: July, August, September
+// Autumn: October, November, December
+
+switch(month) {
+    case 0:
+    case 1:
+    case 2:
+        console.log('Winter');
+    break;
+    case 3:
+    case 4:
+    case 5:
+        console.log('Spring');
+    break;
+    case 6:
+    case 7:
+    case 8:
+        console.log('Summer');
+    break;
+    case 9:
+    case 10:
+    case 11:
+        console.log('Autumn');
+    break;
+    default:
+        console.log('Something went horribly wrong...');
+}
